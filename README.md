@@ -61,7 +61,8 @@ Simply enter the name of the city in the search box and press the search button 
 <p align="center">
   <img width="250" alt="Screenshot 2024-05-03 at 1 40 23 AM" src="https://github.com/stringsc/WeatherApp/assets/122483725/1dd99e50-4455-456b-990e-c8b605243093">
 
-  <img alt="newyork" src="https://github.com/stringsc/WeatherApp/assets/122483725/902decab-0691-4387-be20-52578bdf80a3" style="border-radius: 10px; width: 250px;"/>
+  <img width="250" alt="Screenshot 2024-05-03 at 1 41 54 AM" src="https://github.com/stringsc/WeatherApp/assets/122483725/29d5bbfb-8fcc-4c66-b103-8ea83d422ad2">
+
   <img alt="sydney" src="https://github.com/stringsc/WeatherApp/assets/122483725/e4751e93-e2bb-4ca6-8264-97640a092f01" style="border-radius: 10px; width: 250px;"/>
 
 </p>
