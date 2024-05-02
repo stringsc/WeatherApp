@@ -18,24 +18,24 @@ Current Weather Information:
 ## Search Functionality
 
 
-Allows users to search for any city and receive instant weather details.
+-Allows users to search for any city and receive instant weather details.
 
 
-Responsive Design: Optimized for both desktop and mobile devices.
+=Responsive Design: Optimized for both desktop and mobile devices.
 
 ## Technologies Used
 
 
-JavaScript
+1. JavaScript
 
 
-HTML
+2. HTML
 
 
-CSS
+3. CSS
 
 
-OpenWeatherMap API
+4. OpenWeatherMap API
 
 ## Setup
 
