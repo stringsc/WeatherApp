@@ -22,12 +22,14 @@ CSS
 OpenWeatherMap API
 
 ## Setup
+
+
 To run Weather App locally:
 
-Clone the repository:
-bash
-Copy code
+-Clone the repository:
+```bash
 git clone <repository-url>
+```
 Navigate to the cloned repository:
 bash
 Copy code
