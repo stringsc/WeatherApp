@@ -59,9 +59,9 @@ Simply enter the name of the city in the search box and press the search button 
 
 
 <p align="center">
-  <img alt="berlin" src="https://github.com/stringsc/WeatherApp/assets/122483725/8c8616b4-2c09-408a-8e55-7d984dec4a77" style="border-radius: 10px; width: 250px;"/>
-  <img width="500" alt="newyork" src="https://github.com/stringsc/WeatherApp/assets/122483725/902decab-0691-4387-be20-52578bdf80a3">
-  <img width="520" alt="sydney" src="https://github.com/stringsc/WeatherApp/assets/122483725/e4751e93-e2bb-4ca6-8264-97640a092f01">
+  <img alt="berlin" src="https://github.com/stringsc/WeatherApp/assets/122483725/8c8616b4-2c09-408a-8e55-7d984dec4a77" style="border-radius: 50px; width: 250px;"/>
+  <img alt="newyork" src="https://github.com/stringsc/WeatherApp/assets/122483725/902decab-0691-4387-be20-52578bdf80a3" style="border-radius: 10px; width: 250px;"/>
+  <img alt="sydney" src="https://github.com/stringsc/WeatherApp/assets/122483725/e4751e93-e2bb-4ca6-8264-97640a092f01" style="border-radius: 10px; width: 250px;"/>
 
 </p>
 
