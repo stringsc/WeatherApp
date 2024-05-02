@@ -26,15 +26,17 @@ OpenWeatherMap API
 
 To run Weather App locally:
 
--Clone the repository:
+Clone the repository:
 ```bash
 git clone <repository-url>
 ```
 Navigate to the cloned repository:
-bash
-Copy code
+```bash
 cd weather-app
+```
 Open the index.html file in a browser with a live server plugin to handle local server operations.
-How to Use
+
+
+## How to Use
 Simply enter the name of the city in the search box and press the search button or enter key. The weather details for the city will display instantly.
 
