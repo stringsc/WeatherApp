@@ -4,7 +4,9 @@
 Weather App provides real-time weather updates, detailed descriptions, daily highs and lows, humidity levels, wind speeds, and "feels like" temperatures for any city. Designed using JavaScript, HTML, and CSS, this app offers a clean and intuitive interface for accessing weather data.
 
 
-**Features**
+##Features
+
+
 Current Weather Information: 
 -Get up-to-date weather conditions including temperature, humidity, and wind speed.
 -Daily Highs and Lows: Displays the maximum and minimum temperatures for the day.
