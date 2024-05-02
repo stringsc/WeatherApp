@@ -8,17 +8,33 @@ Weather App provides real-time weather updates, detailed descriptions, daily hig
 
 
 Current Weather Information: 
+
+
 -Get up-to-date weather conditions including temperature, humidity, and wind speed.
+
+
 -Daily Highs and Lows: Displays the maximum and minimum temperatures for the day.
 
 ## Search Functionality
+
+
 Allows users to search for any city and receive instant weather details.
+
+
 Responsive Design: Optimized for both desktop and mobile devices.
 
 ## Technologies Used
+
+
 JavaScript
+
+
 HTML
+
+
 CSS
+
+
 OpenWeatherMap API
 
 ## Setup
