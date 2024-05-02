@@ -59,7 +59,7 @@ Simply enter the name of the city in the search box and press the search button 
 
 
 <p align="center">
-  <img width="250" height="300" style="border-radius: 10px" alt="Screenshot 2024-05-03 at 1 40 23 AM" src="https://github.com/stringsc/WeatherApp/assets/122483725/1dd99e50-4455-456b-990e-c8b605243093">
+  <img width="250" height="350" style="border-radius: 10px" alt="Screenshot 2024-05-03 at 1 40 23 AM" src="https://github.com/stringsc/WeatherApp/assets/122483725/1dd99e50-4455-456b-990e-c8b605243093">
 
   <img width="250" height="300" style="border-radius: 10px" alt="Screenshot 2024-05-03 at 1 41 54 AM" src="https://github.com/stringsc/WeatherApp/assets/122483725/29d5bbfb-8fcc-4c66-b103-8ea83d422ad2">
 
