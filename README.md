@@ -15,6 +15,8 @@ Current Weather Information:
 
 -Daily Highs and Lows: Displays the maximum and minimum temperatures for the day.
 
+-3 Day forecasts 
+
 ## Search Functionality
 
 
