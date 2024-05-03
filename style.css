@@ -88,7 +88,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    margin-top: 50px; 
+    margin-top: 40px; 
  }
 
  .col
@@ -102,12 +102,13 @@ body{
 {
     width: 40px;
     margin-right: 10px;
+    margin-top: -10px;
 }
 
 .humidity, .wind
 {
     font-size: 20px;
-    margin-top: -6px;
+    margin-top: -10px;
 }
 
 .weather {
@@ -144,6 +145,62 @@ body{
     margin-top: -40px;
     margin-bottom: 15px;
 }
+
+.forecast {
+    display: flex;
+    justify-content: center; /* Horizontally center the days */
+    align-items: center; /* Vertically center the days */
+    flex-wrap: nowrap; 
+    width: 100%; 
+    margin-top: 10px;
+}
+
+.day {
+    flex: 1 10 30%; /* Adjust this value as needed to make the days narrower */
+    margin: 10px;
+    /* padding: 20px;
+    background: rgba(255, 255, 255, 0.1); */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.day h4, .day h6, .day p {
+    margin: 5px 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.weather {
+    animation: fadeIn 1s ease-in;
+}
+
+.forecast .day {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+
+
 
 
   

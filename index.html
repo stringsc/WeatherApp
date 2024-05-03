@@ -10,7 +10,7 @@
 
 <div class="card">
     <div class="search">
-        <input type="text" placeholder="Enter city name"
+        <input type="text" placeholder="Enter city name, country code" 
         spellcheck="false">
         <button><img src = "images/search.png"></button>
     </div>
@@ -25,8 +25,6 @@
         <h2 class="city"></h2>
         <h4 class="temp_min"></h4>
         <h5 class="temp_max"></h4>
-        
-
         
         <div class="details">
             <div class="col">
@@ -44,6 +42,26 @@
                 </div>
             </div>
         </div>
+        <div class="forecast">
+    <div class="day">
+        <h4>Day 1</h4>
+        <img class="forecast-icon-1">
+        <h6 class="forecast-day-1"></h6>
+        <p class="forecast-temp-1"></p>
+    </div>
+    <div class="day">
+        <h4>Day 2</h4>
+        <img class="forecast-icon-2">
+        <h6 class="forecast-day-2"></h6>
+        <p class="forecast-temp-2"></p>
+    </div>
+    <div class="day">
+        <h4>Day 3</h4>
+        <img class="forecast-icon-3">
+        <h6 class="forecast-day-3"></h6>
+        <p class="forecast-temp-3"></p>
+    </div>
+</div>
     </div>
 </div>
 
@@ -51,18 +69,34 @@
 
 const apiKey = "cb0c51f74f147dc61a1d11003ce36823";
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?&units=imperial&q=";
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?&units=imperial&q=";
 const searchBox = document.querySelector('.search input');
 const searchBtn = document.querySelector('.search button');
 const weatherIcon = document.querySelector('.weather-icon');
-async function getWeatherData(city) {
-    const response = await fetch(apiURL + city + '&appid=' + apiKey);
+async function getWeatherData(location) {
+    const response = await fetch(apiURL + location + '&appid=' + apiKey);
+    const forecastResponse = await fetch(forecastURL + location + '&appid=' + apiKey + '&cnt=24');
+
 
     if(response.status === 404) {
         document.querySelector('.error').style.display = 'block';
         document.querySelector('.weather').style.display = 'none';
+
+        searchBox.classList.add('shake');
+
+        searchBox.addEventListener('animationend', () => {
+            searchBox.classList.remove('shake');
+        });
+        
+        searchBox.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                getWeatherData(searchBox.value);
+            }
+        });
         return;
     } else {
         var data = await response.json();
+        var forecastData = await forecastResponse.json();
 
     document.querySelector('.city').innerText = data.name;
     document.querySelector('.temp').innerText = Math.round(data.main.temp) + '°F';
@@ -75,6 +109,14 @@ async function getWeatherData(city) {
     const weatherIconCode = data.weather[0].icon;
         weatherIcon.src = 'http://openweathermap.org/img/wn/' + weatherIconCode + '@2x.png';
     document.querySelector('.description').innerText = data.weather[0].description;
+
+    
+    for (let i = 0; i < 3; i++) {
+        document.querySelector('.forecast-day-' + (i+1)).innerText = forecastData.list[i].weather[0].main;
+        document.querySelector('.forecast-icon-' + (i+1)).src = 'http://openweathermap.org/img/wn/' + forecastData.list[i].weather[0].icon + '@2x.png';
+        document.querySelector('.forecast-temp-' + (i+1)).innerText = Math.round(forecastData.list[i].main.temp) + '°F';
+
+    }
     
     // if (data.weather[0].main === 'Clouds') {
     //     weatherIcon.src = 'images/clouds.png';
@@ -95,8 +137,8 @@ async function getWeatherData(city) {
     document.querySelector('.error').style.display = 'none';
     }
     
-
 }
+
 
 
 searchBtn.addEventListener('click', () => {
