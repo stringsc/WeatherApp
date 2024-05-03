@@ -59,9 +59,13 @@ Simply enter the name of the city in the search box and press the search button 
 
 
 <p align="center">
-  <img alt="Screenshot 2024-05-03 at 12 52 30 AM" src="https://github.com/stringsc/WeatherApp/assets/122483725/5e413c1d-cc5c-4d6e-a6af-fa5202109f35" style="border-radius: 10px; width: 250px;"/>
-  <img alt="Screenshot 2024-05-03 at 12 52 44 AM" src="https://github.com/stringsc/WeatherApp/assets/122483725/654d15b6-64b3-46f4-8f9f-13989f5d44be" style="border-radius: 10px; width: 250px;"/>
-  <img alt="Screenshot 2024-05-03 at 12 53 13 AM" src="https://github.com/stringsc/WeatherApp/assets/122483725/17420fba-c424-43f2-9925-d107b2e674ed" style="border-radius: 10px; width: 250px;"/>
+  <img width="250" height="333" style="border-radius: 10px" alt="Screenshot 2024-05-03 at 1 40 23 AM" src="https://github.com/stringsc/WeatherApp/assets/122483725/1dd99e50-4455-456b-990e-c8b605243093">
+
+  <img width="250" height="333" style="border-radius: 10px" alt="Screenshot 2024-05-03 at 1 41 54 AM" src="https://github.com/stringsc/WeatherApp/assets/122483725/29d5bbfb-8fcc-4c66-b103-8ea83d422ad2">
+
+  <img width="250" height="333" style="border-radius: 10px" alt="Screenshot 2024-05-03 at 1 43 17 AM" src="https://github.com/stringsc/WeatherApp/assets/122483725/fb42c79e-fa69-4673-916b-156042b9db3a">
+
+
 </p>
 
 
